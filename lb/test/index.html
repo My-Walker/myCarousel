@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+</head>
+<body>
+    <div id="match">
+        <div class="my-carousel-container container">
+            <ul class="my-carousel-list my-carousel-clearfix items">
+                <li class="my-carousel-item item red">one</li>
+                <li class="my-carousel-item item green">two</li>
+                <li class="my-carousel-item item yellow">three</li>
+                <li class="my-carousel-item item blue">four</li>
+                <li class="my-carousel-item item gray">five</li>  
+            </ul>
+            <ul class="my-carousel-btn-list"> 
+                <li class="my-carousel-btn-item carousel-current"></li>
+                <li class="my-carousel-btn-item"></li>
+                <li class="my-carousel-btn-item"></li>
+                <li class="my-carousel-btn-item"></li>
+                <li class="my-carousel-btn-item"></li>              
+            </ul>
+            <div class="my-carousel-prev prev">
+                <span>&lt;</span>
+            </div>
+            <div class="my-carousel-next next">
+                <span>&gt;</span>
+            </div>
+        </div>
+    </div>
+    <script src="../js/carousel.js"></script>
+    <script>
+        var carousel = new MyCarousel('match', {
+            playSpeed: 1500,
+            showController: true,
+            showBtn: true
+        });
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+.my-carousel-clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    *zoom: 1;
+}
+/* 轮播元素 */
+.my-carousel-container {
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid yellow; */
+}
+.my-carousel-list {
+    position: absolute;
+    /* left: 0; */
+    /* 此两项根据传入的id，获取dom计算添加 */
+    /* width: 700%; */
+    /* 过渡动画 */
+    transition-property: left;
+    -moz-transition-property: left;
+    -webkit-transition-property: left;
+    -o-transition-property: left;
+    transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+}
+.my-carousel-item {
+    float: left;
+}
+
+/* 圆点按钮 */
+.my-carousel-btn-list {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    height: 10px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+         transform: translateX(-50%);
+}
+.my-carousel-btn-item {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    text-indent: -9999px;
+}
+.carousel-current {
+    background-color: #69aaec;
+}
+
+/* 左右控制器 */
+.my-carousel-prev,
+.my-carousel-next {
+    position: absolute;
+    top: 50%;
+    display: block;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+         transform: translateY(-50%);
+    cursor: pointer;
+}
+.my-carousel-prev {
+    left: 0;
+}
+.my-carousel-next {
+    right: 0;
+}
